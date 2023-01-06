@@ -5,3 +5,14 @@ var forcast = baseUrl + 'forecast?&appid=' + apiKey + '&units=metric&';
 
 console.log('Current weather link: ', currentWeather);
 console.log('Forecast current weather link: ', forcast);
+
+function getLocalStoredItems() {
+    var getStoredItem = JSON.parse(localStorage.getItem("SearchKey")) || [];
+    return getStoredItem;
+  }
+  
+  function storeItemsLocally(searchItem) {
+    var saveItem = localStorage.setItem("SearchKey", JSON.stringify(searchItem));
+    return saveItem;
+  }
+  
