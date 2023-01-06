@@ -1,0 +1,11 @@
+.weather-header {
+    background-color: var(--header-background);
+}
+
+:root {
+    --grey: #afaeae;
+    --purple: #4400ff;
+    --card-background: #3a546f;
+    --header-background: #4400ff;
+}
+
